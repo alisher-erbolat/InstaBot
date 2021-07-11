@@ -1,0 +1,10 @@
+stages:
+- build
+- sonar-analyse
+
+include:
+- project: 'cicd/gitlab-ci-templates'
+  file: 'build/maven/maven-3.6-jdk8_qa.yml'
+
+- project: 'cicd/gitlab-ci-templates'
+  file: 'sonar-analyse/sonar-scanner-maven_qa.yml'

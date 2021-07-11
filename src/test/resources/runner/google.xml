@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "CC Tests " configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="autotest.core.listener.MyTestResultListener"/>
+    </listeners>
+
+    <test name = "Инста бот" group-by-instances="true">
+        <classes>
+            <class name="autotest.tests.regress.LoginTest"/>
+            <class name="autotest.tests.regress.LikeSubscribeTest"/>
+            <class name="autotest.tests.regress.LogoutTest"/>
+        </classes>
+    </test>
+</suite>

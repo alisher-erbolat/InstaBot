@@ -21,8 +21,8 @@ public class DataProviderClass extends BaseTest {
     @DataProvider
     public Object[][] usernamePassword(){
         Object[][] data = new Object[1][2];
-        data[0][0] = "betacareer_engineering";
-        data[0][1] = "beta2020career";
+        data[0][0] = "";
+        data[0][1] = "";
         return data;
     }
 }
